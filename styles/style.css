@@ -58,21 +58,15 @@ body {
 }
 
 /* the start of the main section */
-
-/* #mission-bground #mission {
-  display: flex;
-  align-items: center;
-  justify-content: column;
-} */
-
 #mission-bground {
   position: relative;
   text-align: center;
+  padding: 0 50px;
 }
 
 #mission-bground img {
-  height: 700px;
-  width: 1200px
+  /* height: 100%; */
+  width: 1200px;
 }
 
 /*Positioning the mission statement by first removing it from the document flow and allowing it to float above its nearest ancestor element #mission-bground img". Then */
@@ -87,27 +81,60 @@ body {
 
 /*Monthly tea seaction */
 
-#tea-heading {
-  text-align: center;
+
+#monthly-tea {
+  max-width: 1000px; /* Sets the entire containers max width*/
+  margin: 0 auto; /*Centers the section horizontally*/
+  text-align: center; /*Centers the heading text*/
 }
 
 #featured-tea {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  list-style: none;
-  width: 100px;
+  justify-content: space-around;
+  list-style-type: none;
   padding: 0;
-  margin: 0;
 }
 
 #featured-tea li {
-  display: flex;
-  
-  
+  flex: 0 1 calc(33.333% - 20px); 
+  margin: 10px;
+  box-sizing: border-box;
 }
 
 #monthly-tea img {
   width: 300px;
   height: 200px;
+}
+
+#location-bground {
+  text-align: center;
+  padding: 0 50px;
+  position: relative;
+}
+#location-bground img{
+  width: 1200px;
+  height: 500px;
+}
+
+#locations {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*Center the element */
+  width: 100%;
+}
+
+#locations ul {
+  display: flex;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.boxes {
+  width: 300px;
+  height: 300px;
+  background-color: #000;
+  list-style-type: none;
+  
 }
