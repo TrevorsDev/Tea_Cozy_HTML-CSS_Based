@@ -1,0 +1,113 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: seashell;
+  font-size: 22px;
+  background-color: black;
+  opacity: 0.9;
+  font-family: Helvetica, sans-serif;
+}
+
+#fixed {
+  overflow: hidden;
+  background-color: #000;
+  top: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  border-bottom: .7px solid seashell;
+  font-size: 15px;
+}
+
+#nav-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 5px 0 5px 10px;
+  list-style: none;
+}
+
+#logo {
+  margin-right: auto;
+}
+
+#nav-links {
+  display: flex;
+  gap: 20px;
+  margin-right: 10px;
+}
+
+#nav-links a {
+  text-decoration: none;
+  color: #fff;
+}
+
+#nav-links a:hover {
+  color: rgb(227, 154, 169);
+  opacity: none;
+  text-decoration: underline;
+}
+
+#logo img {
+  height: 50px;
+}
+
+/* the start of the main section */
+
+/* #mission-bground #mission {
+  display: flex;
+  align-items: center;
+  justify-content: column;
+} */
+
+#mission-bground {
+  position: relative;
+  text-align: center;
+}
+
+#mission-bground img {
+  height: 700px;
+  width: 1200px
+}
+
+/*Positioning the mission statement by first removing it from the document flow and allowing it to float above its nearest ancestor element #mission-bground img". Then */
+#mission {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /*Center the element */
+  background-color: #000;
+  width: 100%;
+}
+
+/*Monthly tea seaction */
+
+#tea-heading {
+  text-align: center;
+}
+
+#featured-tea {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  list-style: none;
+  width: 100px;
+  padding: 0;
+  margin: 0;
+}
+
+#featured-tea li {
+  display: flex;
+  
+  
+}
+
+#monthly-tea img {
+  width: 300px;
+  height: 200px;
+}
