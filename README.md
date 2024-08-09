@@ -3,3 +3,5 @@ A basic webpage integrating design and positioning concepts from HTML and CSS to
 
 
 I focused heavily on understanding positioning of elements, and exploring techniques of how to implement positioning correctly, professionally, and in an organized manner.
+
+In the future I would like to add full responsive capabilities to the website.

@@ -77,6 +77,10 @@ h2 {
   height: auto;
 }
 
+#mission h2 {
+  padding: 20px 0 20px 0;
+}
+
 /*Positioning the mission statement by first removing it from the document flow and allowing it to float above its nearest ancestor element #mission-bground img". Then */
 #mission {
   position: absolute;
@@ -85,6 +89,7 @@ h2 {
   transform: translate(-50%, -50%); /*Center the element */
   background-color: #000;
   width: 100%;
+  border: green solid 2px;
 }
 
 /*Monthly tea seaction */
